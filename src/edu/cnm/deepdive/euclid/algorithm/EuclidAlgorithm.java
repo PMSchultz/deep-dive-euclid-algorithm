@@ -23,27 +23,29 @@ public class EuclidAlgorithm {
   }
 
   /**
-   * Method to find the gcd of two integers a and b
+   * Method to find the gcd of two integers a and b using modular division
    * @param a first input integer
    * @param b second input integer
-   * @return computes largest inte
+   * @return computes largest integer
    */
   public static int gcd(int a, int b){
    //Return the absolute value of a and b in the event they are negative
     a = Math.abs(a);
     b = Math.abs(b);
-    if (a == 0 || b == 0){
-      return Math.max(a, b);
-    }
-    while (a != b){
-      if (a > b){
-        a -= b;
-      } else {
-        b -= a;
-      }
+    int c = Math.max(a,b);
+    a = c;
+    b = Math.min(a,b);
+    while (b > 0){
+      c = a % b;
+      a = b;
+      b = c;
     }
     return a;
-  }
+
+
+
+    }
+
 }
   /**recursive implementation
   public static int findGCD(int a, int b){

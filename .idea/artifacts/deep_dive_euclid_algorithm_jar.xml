@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="deep-dive-euclid-algorithm:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/deep_dive_euclid_algorithm_jar</output-path>
+    <root id="root">
+      <element id="archive" name="deep-dive-euclid-algorithm.jar">
+        <element id="module-output" name="deep-dive-euclid-algorithm" />
+      </element>
+    </root>
+  </artifact>
+</component>
